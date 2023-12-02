@@ -1,0 +1,124 @@
+
+body{
+
+    margin: 0;
+    padding: 0
+
+}
+
+h1 {
+
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    line-height: 1.3;
+    margin-top: 10%;
+    margin-left: 10%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
+}
+
+#foto {
+    width: 380px;
+    animation: fadeIn 2s;
+    margin-top: -50%;
+    margin-left: 50%;
+}
+
+dialog {
+
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    width: 50%;
+    box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.4);
+
+}
+
+.section1{
+
+    background-color: black ;
+    width: 100%;
+    height: 400px; 
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.button1{
+
+    border: none;
+    background-color: rgba(15, 81, 247, 0);
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    padding: 0px;
+
+}
+
+#btn1-2{
+    
+    animation: 0.5s ease-out 0s 1 popin;
+    border-radius: 25px;
+    background-color: rgb(17, 17, 17);
+    
+}
+
+
+#Close1{
+
+    border: none;
+    background-color: rgb(77, 15, 15);
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+@keyframes slideInFromLeft {
+
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes popin {
+
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+        transform: translateX(-100%); 
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0); 
+    }
+  }
+
+dialog::backdrop {
+
+    background-color: rgb(0, 0, 0, 0.7);
+
+  }
+
+
+
